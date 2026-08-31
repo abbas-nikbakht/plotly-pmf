@@ -17,6 +17,7 @@ First, install Plotly:
 ```bash
 pip install plotly
 ```
+from math import isclose
 
 ## Usage
 
@@ -29,24 +30,30 @@ Import the function and provide:
 
 ### Example
 
-```python
+```
 import plotly.graph_objects as go
-
-x = [1, 2, 3, 4, 5]
-y = [0.1, 0.2, 0.3, 0.25, 0.15]
+from math import isclose
 
 fig = go.Figure()
 
-plot_PMF(
-    fig,
-    x,
-    y,
-    color_line="blue",
-    marker_symbol="circle"
-)
+# x Random Variable
+x = [1, 2, 3, 4, 5, 6,7,8,9,10]
+
+## plot p(x)
+p_x = [0.04,0.06,0.08,0.12,0.16,0.18,0.14,0.10,0.08,0.04]
+
+fig= plot_PMF(fig,x,p_x,"red","x")
+
+
+# Set y-axes titles
+fig.update_yaxes(title_text="p(x)")
+fig.update_xaxes(title_text="x")
 
 fig.show()
+fig.write_html('first_figure1.html', auto_open=True)
 ```
+
+
 
 ## Parameters
 
