@@ -36,24 +36,21 @@ from math import isclose
 
 fig = go.Figure()
 
-# x Random Variable
 x = [1, 2, 3, 4, 5, 6,7,8,9,10]
-
-## plot p(x)
 p_x = [0.04,0.06,0.08,0.12,0.16,0.18,0.14,0.10,0.08,0.04]
 
 fig= plot_PMF(fig,x,p_x,"red","x")
 
 
-# Set y-axes titles
 fig.update_yaxes(title_text="p(x)")
 fig.update_xaxes(title_text="x")
 
 fig.show()
 fig.write_html('first_figure1.html', auto_open=True)
 ```
+## Example Output
 
-
+![PMF Example](images/a.JPG)
 
 ## Parameters
 
@@ -145,7 +142,3 @@ The function produces a Plotly interactive figure where:
 * The **y-axis** represents their corresponding probabilities.
 * Markers show the probability at each discrete value.
 * The line connects the probability values.
-
-## License
-
-This project is available for educational and personal use. aaaa
