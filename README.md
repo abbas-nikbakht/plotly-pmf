@@ -1,3 +1,7 @@
+## Example
+
+![PMF Plot](images/a.JPG)
+
 # Plot PMF with Plotly
 
 A simple Python function for plotting a **Probability Mass Function (PMF)** of a discrete random variable using [Plotly](https://plotly.com/python/).
