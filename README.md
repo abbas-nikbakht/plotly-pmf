@@ -139,11 +139,6 @@ The function produces a Plotly interactive figure where:
 * Markers show the probability at each discrete value.
 * The line connects the probability values.
 
-## Requirements
-
-* Python 3.x
-* Plotly
-
 ## License
 
 This project is available for educational and personal use.
