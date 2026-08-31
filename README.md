@@ -138,3 +138,7 @@ The function produces a Plotly interactive figure where:
 * The **y-axis** represents their corresponding probabilities.
 * Markers show the probability at each discrete value.
 * The line connects the probability values.
+
+## License
+
+This project is available for educational and personal use. aaaa
